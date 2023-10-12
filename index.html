@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Fitness Club</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('IMAGE/background.jpg');
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 34px;
+        margin: -4px;
+        padding: 8px;
+    }
+
+    .left img {
+        height: 58px;
+        width: 191px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 0px;
+        font-size: 18px;
+    }
+
+    .mid {
+        display: block;
+        width: 35%;
+        margin: 25px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 34px;
+        margin: 20px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 10px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        background: black;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px 10px;
+        cursor: pointer;
+        border: 2px solid grey;
+        border-radius: 10px;
+        padding: 4px 14px;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        width: 33%;
+        padding: 55px;
+        font-size: 20px;
+        margin: 61px 20px;
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .form-group input {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        padding: 6px;
+        width: 317px;
+        display: block;
+        text-align: center;
+        border: 2px solid grey;
+        border-radius: 10px;
+        margin: 9px auto;
+    }
+
+    .container button {
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        width: 120px;
+        margin: 30px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="IMAGE/logo.png" alt="">
+            <div>
+                Sahhaf's Fitness Club
+            </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn" id="btn1">
+                Call Us Now
+            </button>
+            <button class="btn" id="btn2">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the BEST Fitness Club of Kolkata NOW!!</h3>
+        <form action="noaction.php">
+            <div class="form-group"><input type="text" placeholder="Enter your Name"></div>
+            <div class="form-group"><input type="number" placeholder="Enter your Age"></div>
+            <div class="form-group"><input type="text" placeholder="Enter your Gender"></div>
+            <div class="form-group"><input type="text" placeholder="Enter your Mailing Address"></div>
+            <div class="form-group"><input type="tel" placeholder="Enter your Contact Number"></div>
+            <div class="form-group"><input type="email" placeholder="Enter your E-Mail ID"></div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
